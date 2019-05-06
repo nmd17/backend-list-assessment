@@ -34,6 +34,7 @@ def remove_adjacent(nums):
 def linear_merge(list1, list2):
     """Your code goes here.  Edit this docstring."""
     result = []
+    print(list1, list2)
 
     while list1 and list2:
         result.append((list1 if list1[-1] > list2[-1] else list2).pop(-1))
